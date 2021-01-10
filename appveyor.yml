@@ -1,26 +1,13 @@
-# Version
-version: '{build}'
-
-# Branches
-#branches:
-#  only: master
+image: Visual Studio 2019
 
 skip_tags: true
 
-# Build Server Image
-image: Visual Studio 2017 Preview
-
-# Install Script
 install:
   - cmd: dotnet --version
 
-# Build Script
 build_script:
-  - ps: . .\build.ps1 -Verbosity Diagnostic
+  - dotnet build -c Release
+  - dotnet pack -c Release --no-build -o .\build
 
-# Tests
-test: false
-
-# Define artifacts
 artifacts:
-  - path: 'build\*.nupkg'
+  - path: build\*.nupkg
