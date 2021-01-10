@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>FuManchu is a text templating engine based on HandlebarsJS</Description>
     <AssemblyTitle>FuManchu - Handlebar templating for .NET</AssemblyTitle>
-    <VersionPrefix>1.6.0</VersionPrefix>
+    <VersionPrefix>1.7.0</VersionPrefix>
     <TargetFrameworks>net461;net472;netstandard1.5;netstandard2.0</TargetFrameworks>
     <DebugType>embedded</DebugType>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
